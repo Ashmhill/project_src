@@ -1,0 +1,124 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #473144;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    color: #473144;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #EFC69B;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #AF1B3F;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #EFC69B;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 20px;
+    border: 1px solid #EFC69B;
+}
+
+article h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #AF1B3F;
+}
+
+article p {
+    margin: 0.5em 0;
+}
+
+article p time {
+    font-size: 1.2em; /* Increased font size for date */
+}
+
+article .details {
+    text-align: right; /* Right-align the details list */
+    line-height: 1.4; /* Slightly reduced line spacing */
+    border-right: 1px solid #EFC69B; /* Added right border */
+    padding-right: 20px; /* Spacing on right */
+    margin-right: 20px; /* Spacing on left */
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.description {
+    margin-top: 10px;
+}
+
+aside {
+    background-color: #fff;
+    color: #473144;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #EFC69B;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #473144;
+    border-top: 1px solid #EFC69B;
+}
+
+.skiptocontent {
+    position: absolute;
+    top: -40px;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+    position: absolute;
+    background: #EFC69B;
+    color: #473144;
+    padding: 10px;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Hillstead | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="home">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ui/logo.png" alt="Ashley Hillstead's Portfolio">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-toggle" aria-expanded="false">
+                        <a href="projects.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="WDD 130">WDD 130</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 210">CSE 210</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 121E">CSE 121E</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 212">CSE 212</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 111">CSE 111</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 382">CSE 382</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1 class="animate-on-scroll">Ashley Hillstead</h1>
+                <h2 class="animate-on-scroll">Web Developer & Software Engineer</h2>
+                <p class="animate-on-scroll">I'm a passionate developer currently studying at BYU-Idaho, focused on creating accessible and engaging web experiences.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn animate-on-scroll">View My Work</a>
+                    <a href="contacts.html" class="btn btn-outline animate-on-scroll">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+                <p class="section-intro animate-on-scroll">Here are some of my recent projects from my BYU-Idaho coursework.</p>
+                
+                <div id="recent-projects" class="projects-grid animate-on-scroll">
+                    <!-- ACTUAL featured projects -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/projects/workout.png" alt="Workout Tracker">
+                        </div>
+                        <div class="project-info">
+                            <h3>Workout Tracker</h3>
+                            <p class="project-course">WDD 130</p>
+                            <p class="project-description">A comprehensive workout tracking application for fitness enthusiasts.</p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Local Storage</span>
+                            </div>
+                            <a href="project-details.html?id=workout-tracker" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/projects/Recipes.png" alt="Recipe Finder">
+                        </div>
+                        <div class="project-info">
+                            <h3>Recipe Finder</h3>
+                            <p class="project-course">WDD 130</p>
+                            <p class="project-description">An application for discovering and saving recipes.</p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">JSON</span>
+                            </div>
+                            <a href="project-details.html?id=recipe-app" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/projects/Sorting.png" alt="Data Sorting Visualization">
+                        </div>
+                        <div class="project-info">
+                            <h3>Data Sorting Visualization</h3>
+                            <p class="project-course">CSE 212</p>
+                            <p class="project-description">A visual demonstration of different sorting algorithms.</p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
+                            <a href="project-details.html?id=data-sorting" class="btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-all animate-on-scroll">
+                    <a href="projects.html" class="btn">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">My Skills</h2>
+                <p class="section-intro animate-on-scroll">I've developed a range of technical skills through coursework and personal projects.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card animate-on-scroll">
+                        <img class="skill-icon" src="images/ui/frontend.png" alt="frontend">
+                        <h3>Frontend Development</h3>
+                        <p>Creating responsive and interactive user interfaces using modern web technologies.</p>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Responsive Design</li>
+                            <li>Web Accessibility</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card animate-on-scroll">
+                        <img class="skill-icon" src="images/ui/backend.png" alt="backend">
+                        <h3>Backend Development</h3>
+                        <p>Building robust server-side applications and APIs to power web applications.</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Node.js</li>
+                            <li>RESTful APIs</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card animate-on-scroll">
+                        <img class="skill-icon" src="images/ui/design.png" alt="design">
+                        <h3>Design & UX</h3>
+                        <p>Creating intuitive and visually appealing user experiences.</p>
+                        <ul>
+                            <li>UI/UX Principles</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>Visual Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container two-column">
+                <div class="profile-image animate-on-scroll">
+                    <img src="images/profile.png" alt="Ashley Hillstead">
+                </div>
+                
+                <div class="profile-content animate-on-scroll">
+                    <h2>About Me</h2>
+                    <p>I'm a software engineering student at BYU-Idaho with a passion for creating accessible and innovative web applications. My journey in technology began when I took my first programming class and discovered how coding could bring creative ideas to life.</p>
+                    <p>When I'm not coding, you can find me hiking, reading, or exploring new technologies. I believe in continuous learning and pushing my skills to new heights.</p>
+                    <a href="about.html" class="btn">Learn More About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section animate-on-scroll">
+            <div class="container">
+                <h2 class="animate-on-scroll">Let's Work Together</h2>
+                <p class="animate-on-scroll">Interested in collaborating or have a project in mind? I'd love to hear about it!</p>
+                <a href="contacts.html" class="btn animate-on-scroll">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li>
+                    <a href="index.html">
+                        <img class="icon" src="images/footer/home.png" alt="Home">
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <img class="icon" src="images/footer/about.png" alt="About">
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <img class="icon" src="images/footer/project.png" alt="Projects">
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <img class="icon" src="images/footer/courses.png" alt="Courses">
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <img class="icon" src="images/footer/contact.png" alt="Contact">
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="social-links">
+                <li>
+                    <a href="#" aria-label="GitHub Profile">
+                        <img class="icon" src="images/social/github.png" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="LinkedIn Profile">
+                        <img class="icon" src="images/social/linkedin.png" alt="Linked In">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter Profile">
+                        <img class="icon" src="images/social/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="copyright">© 2025 Ashley Hillstead. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Ashley Hillstead</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="settings">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ui/logo.png" alt="Ashley Hillstead's Portfolio">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-toggle" aria-expanded="false">
+                        <a href="projects.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="WDD 130">WDD 130</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 210">CSE 210</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 121E">CSE 121E</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 212">CSE 212</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 111">CSE 111</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 382">CSE 382</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                    <li><a href="settings.html" aria-current="page">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="settings-header animate-on-scroll">
+            <h1>Settings</h1>
+            <p>Customize Your Experience</p>
+            <p class="settings-intro">Adjust how you view and interact with my website. Your preferences will be saved automatically.</p>
+        </section>
+
+        <section class="settings-content">
+            <form id="settings-form" class="settings-form">
+                <div class="settings-group animate-on-scroll">
+                    <h2>Appearance</h2>
+                    <div class="setting-item">
+                        <label for="theme-selector">Theme:</label>
+                        <select id="theme-selector" name="theme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="system">System Default</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <label for="accent-color">Accent Color:</label>
+                        <div class="color-options">
+                            <label class="color-option">
+                                <input type="radio" name="accentColor" value="blue" checked>
+                                <span class="color-preview blue"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="accentColor" value="green">
+                                <span class="color-preview green"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="accentColor" value="orange">
+                                <span class="color-preview orange"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="accentColor" value="purple">
+                                <span class="color-preview purple"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <label>Font Size:</label>
+                        <div class="font-size-options">
+                            <button type="button" class="font-size-btn" data-size="small">Small</button>
+                            <button type="button" class="font-size-btn active" data-size="medium">Medium</button>
+                            <button type="button" class="font-size-btn" data-size="large">Large</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-group animate-on-scroll">
+                    <h2>Project Display</h2>
+                    <div class="setting-item">
+                        <label for="project-sort">Default Project Sort:</label>
+                        <select id="project-sort" name="projectSort">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="alphabetical">Alphabetical</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <label for="projects-per-page">Projects Per Page:</label>
+                        <select id="projects-per-page" name="projectsPerPage">
+                            <option value="6">6</option>
+                            <option value="9" selected>9</option>
+                            <option value="12">12</option>
+                            <option value="all">All</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <label>View Mode:</label>
+                        <div class="view-mode-options">
+                            <label class="radio-option">
+                                <input type="radio" name="viewMode" value="grid" checked>
+                                <span>Grid</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="viewMode" value="list">
+                                <span>List</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-group animate-on-scroll">
+                    <h2>Content Preferences</h2>
+                    <div class="setting-item checkbox-item">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="showDescriptions" checked>
+                            <span class="checkmark"></span>
+                            Show project descriptions in gallery
+                        </label>
+                    </div>
+
+                    <div class="setting-item checkbox-item">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="enableAnimations" checked>
+                            <span class="checkmark"></span>
+                            Enable animations
+                        </label>
+                    </div>
+
+                    <div class="setting-item checkbox-item">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="showTechnologies" checked>
+                            <span class="checkmark"></span>
+                            Show project technologies in gallery
+                        </label>
+                    </div>
+
+                    <div class="setting-item checkbox-item">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="highContrastMode">
+                            <span class="checkmark"></span>
+                            Enable high contrast mode
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-group animate-on-scroll">
+                    <h2>User Data</h2>
+                    <div class="user-data-container">
+                        <div class="data-item">
+                            <span>Viewed Projects: <span id="viewed-projects-count">0</span></span>
+                            <button type="button" class="clear-btn" data-clear="viewedProjects">Clear</button>
+                        </div>
+                        <div class="data-item">
+                            <span>Form Submissions: <span id="form-submissions-count">0</span></span>
+                            <button type="button" class="clear-btn" data-clear="formSubmissions">Clear</button>
+                        </div>
+                        <div class="data-item">
+                            <span>Saved Preferences</span>
+                            <button type="button" class="clear-btn" data-clear="preferences">Clear</button>
+                        </div>
+                    </div>
+                    <button type="button" id="clear-all-data" class="btn-danger">Clear All Data</button>
+                </div>
+
+                <div class="settings-actions animate-on-scroll">
+                    <button type="submit" class="btn">Save Settings</button>
+                    <button type="button" id="restore-defaults" class="btn btn-outline">Restore Defaults</button>
+                </div>
+
+                <div id="settings-confirmation" class="settings-confirmation" style="display: none;">
+                    Settings saved successfully!
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="courses.html">Courses</a>
+                <a href="contacts.html">Contact</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <p class="copyright">© 2025 Ashley Hillstead. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for clear data confirmation -->
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+            <h3>Confirm Action</h3>
+            <p>Are you sure you want to clear your data? This action cannot be undone.</p>
+            <div class="modal-actions">
+                <button id="confirm-yes" class="btn btn-danger">Yes, Clear Data</button>
+                <button id="confirm-no" class="btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

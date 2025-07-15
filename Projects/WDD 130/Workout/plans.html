@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="plans.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="progress.html">Your Progress</a></li>
+                <li><a href="plans.html">Workout Plans</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Workout Tracker</h1>
+        <div id="filters">
+            <div class="filter-group">
+                <label for="searchInput">Search:</label>
+                <input type="text" id="searchInput" placeholder="Search workouts...">
+            </div>
+            <div class="filter-group">
+                <label for="difficultyFilter">Difficulty:</label>
+                <select id="difficultyFilter">
+                    <option value="">All</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="durationFilter">Max Duration (min):</label>
+                <input type="number" id="durationFilter" min="0" placeholder="e.g., 60">
+            </div>
+            <div class="filter-group">
+                <label for="goalFilter">Goal:</label>
+                <select id="goalFilter">
+                    <option value="">All</option>
+                    <option value="Overall Strength">Overall Strength</option>
+                    <option value="Muscle Development">Muscle Development</option>
+                    <option value="Cardiovascular Fitness">Cardiovascular Fitness</option>
+                    <option value="Muscular Endurance">Muscular Endurance</option>
+                    <option value="Flexibility">Flexibility</option>
+                </select>
+            </div>
+        </div>
+        <div id="workoutList">
+            <!-- Workouts will be inserted here by JavaScript -->
+        </div>
+    </div>
+    <script src="plans.js" type="module"></script>
+    <footer>
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+</body>
+</html>

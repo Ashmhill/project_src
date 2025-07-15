@@ -1,0 +1,43 @@
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  header, main, footer {
+    text-align: center;
+  }
+  
+  h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  
+  h2 {
+    color: #006EB6;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    margin-top: 50px;
+  }
+
+  /* Default light theme styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dark theme styles */
+  .dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Adjustments for better accessibility */
+  .dark h2 {
+    color: #004785; /* Adjusted blue color for better contrast */
+  }

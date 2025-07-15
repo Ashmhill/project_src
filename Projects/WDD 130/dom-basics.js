@@ -1,0 +1,18 @@
+const newParagraph = document.createElement("p");
+newParagraph.innerText = "Added with Javascript!";
+document.body.appendChild(newParagraph);
+const img = document.createElement("img");
+img.setAttribute("src", "https://picsum.photos/200");
+img.setAttribute("alt", "Dynamic Image");
+document.body.appendChild(img);
+const newDiv = document.createElement("div");
+newDiv.innerHTML = "<ul><li>One</li><li>Two</li><li>Three</li></ul>";
+document.body.appendChild(newDiv);
+const section = document.createElement("section");
+const h2 = document.createElement("h2");
+h2.innerText = "DOM Basics";
+const p = document.createElement("p");
+p.innerText = "This was added through Javascript";
+section.appendChild(h2);
+section.appendChild(p);
+document.body.appendChild(section);

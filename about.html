@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="about">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ui/logo.png" alt="Ashley Hillstead's Portfolio">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li class="dropdown-toggle" aria-expanded="false">
+                        <a href="projects.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="WDD 130">WDD 130</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 210">CSE 210</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 121E">CSE 121E</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 212">CSE 212</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 111">CSE 111</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 382">CSE 382</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-header animate-on-scroll">
+            <h1>About Ashley Hillstead</h1>
+            <h2>Web Developer & Designer</h2>
+        </section>
+
+            <div class="container two-column">
+                <div class="profile-image animate-on-scroll">
+                    <img src="images/profile.png" alt="Ashley Hillstead">
+                </div>
+                
+                <div class="profile-content animate-on-scroll">
+                    <h2>About Me</h2>
+                    <p>I'm a software engineering student at BYU-Idaho with a passion for creating accessible and innovative web applications. My journey in technology began when I took my first programming class and discovered how coding could bring creative ideas to life.</p>
+                    <p>When I'm not coding, you can find me hiking, reading, or exploring new technologies. I believe in continuous learning and pushing my skills to new heights.</p>
+                    <p>As I near the end of my college experience, I've developed a diverse set of skills across front-end and back-end technologies. I believe in creating websites that not only look great but also provide intuitive user experiences and solve real problems.</p>
+                    <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or enjoying the outdoors in beautiful Idaho.</p>
+                </div>
+            </div>
+
+        <section class="education-section animate-on-scroll">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Web Design and Development</h3>
+                <p class="institution">Brigham Young University-Idaho</p>
+                <p class="date">Expected Graduation: 2025</p>
+                
+                <h4>Relevant Coursework:</h4>
+                <ul class="courses-list">
+                    <li>WDD 130: Web Fundamentals</li>
+                    <li>CSE 210: Programming with Classes</li>
+                    <li>CSE 121E: JavaScript Language</li>
+                    <li>CSE 212: Programming with Data Structures</li>
+                    <li>CSE 111: Programming with Functions</li>
+                    <li>CSE 382: Patterns in Functional Programming</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills-section animate-on-scroll">
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item" data-level="90">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="85">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="75">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="65">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="70">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Design Skills</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item" data-level="80">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="75">
+                            <span class="skill-name">Adobe Creative Suite</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="85">
+                            <span class="skill-name">Wireframing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="professional-interests animate-on-scroll">
+            <h2>Professional Interests</h2>
+            <p>I'm particularly passionate about front-end development, responsive design, and creating accessible web experiences. I'm continually expanding my knowledge in JavaScript frameworks, particularly React, and exploring the integration of UI/UX principles into my development process.</p>
+            <p>Looking forward, I'm excited to delve deeper into full-stack development, learning more about back-end technologies and database management to create comprehensive web solutions.</p>
+        </section>
+
+        <section class="cta-section animate-on-scroll">
+            <div class="container">
+                <h2 class="animate-on-scroll">Let's Connect</h2>
+                <p class="animate-on-scroll">Interested in working together or learning more about my projects?</p>
+                <a href="contacts.html" class="btn animate-on-scroll">Contact Me</a>
+                <a href="#" class="btn animate-on-scroll">Download Resume</a>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li>
+                    <a href="index.html">
+                        <img class="icon" src="images/footer/home.png" alt="Home">
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <img class="icon" src="images/footer/about.png" alt="About">
+                    </a>
+                </li>
+                <li>
+                        <img class="icon" src="images/footer/project.png" alt="Projects">
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <img class="icon" src="images/footer/courses.png" alt="Courses">
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <img class="icon" src="images/footer/contact.png" alt="Contact">
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="social-links">
+                <li>
+                    <a href="#" aria-label="GitHub Profile">
+                        <img class="icon" src="images/social/github.png" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="LinkedIn Profile">
+                        <img class="icon" src="images/social/linkedin.png" alt="Linked In">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter Profile">
+                        <img class="icon" src="images/social/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="copyright">© 2025 Ashley Hillstead. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

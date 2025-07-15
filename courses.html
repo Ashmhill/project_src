@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Ashley Hillstead</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="courses">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ui/logo.png" alt="Ashley Hillstead's Portfolio">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-toggle" aria-expanded="false">
+                        <a href="projects.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="WDD 130">WDD 130</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 210">CSE 210</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 121E">CSE 121E</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 212">CSE 212</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 111">CSE 111</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 382">CSE 382</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html" aria-current="page">Courses</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="courses-header animate-on-scroll">
+            <h1>My Courses</h1>
+            <p>An overview of my academic journey at BYU-Idaho</p>
+        </section>
+
+        <section class="courses-intro animate-on-scroll">
+            <p>Throughout my time at BYU-Idaho, I've taken a variety of courses that have shaped my skills and knowledge in web development and design. Below is a summary of the key courses I've completed and the projects developed during each.</p>
+        </section>
+
+        <section class="courses-grid">
+            <div class="course-card animate-on-scroll">
+                <div class="course-header">
+                    <h2>WDD 130</h2>
+                    <h3>Web Fundamentals</h3>
+                </div>
+                <div class="course-content">
+                    <img src="images/courses/wdd130.jpg" alt="WDD 130 Course Banner" class="course-image">
+                    <p>An introduction to the fundamentals of web design and development, covering HTML, CSS, and basic JavaScript. This course established the foundation of my web development journey.</p>
+                    <h4>Key Concepts Learned:</h4>
+                    <ul>
+                        <li>HTML5 semantic structure</li>
+                        <li>CSS layout and styling</li>
+                        <li>Responsive design principles</li>
+                        <li>Web accessibility basics</li>
+                        <li>Basic JavaScript interaction</li>
+                    </ul>
+                    <h4>Projects Completed:</h4>
+                    <div class="course-projects">
+                        <a href="./projects/WDD 130/Workout/index.html" class="course-project-link">Workout Tracker</a>
+                        <a href="./projects/WDD 130/Recipes/index.html" class="course-project-link">Recipe Finder</a>
+                        <a href="./projects/WDD 130/Blog/blog.html" class="course-project-link">Blog Platform</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card animate-on-scroll">
+                <div class="course-header">
+                    <h2>CSE 210</h2>
+                    <h3>Programming with Classes</h3>
+                </div>
+                <div class="course-content">
+                    <img src="images/courses/cse210.jpg" alt="CSE 210 Course Banner" class="course-image">
+                    <p>An exploration of object-oriented programming principles and practices using Python. This course helped me understand software architecture and design patterns.</p>
+                    <h4>Key Concepts Learned:</h4>
+                    <ul>
+                        <li>Object-oriented programming</li>
+                        <li>Class inheritance and polymorphism</li>
+                        <li>Encapsulation and abstraction</li>
+                        <li>Unit testing</li>
+                        <li>Software design patterns</li>
+                    </ul>
+                    <h4>Projects Completed:</h4>
+                    <div class="course-projects">
+                        <a href="./projects/CSE 210/DataAnalysis/index.html" class="course-project-link">Data Analysis Tool</a>
+                        <a href="./projects/CSE 210/Inventory/index.html" class="course-project-link">Inventory Management System</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card animate-on-scroll">
+                <div class="course-header">
+                    <h2>CSE 121E</h2>
+                    <h3>JavaScript Language</h3>
+                </div>
+                <div class="course-content">
+                    <img src="images/courses/cse121e.jpg" alt="CSE 121E Course Banner" class="course-image">
+                    <p>A deep dive into JavaScript programming, exploring modern ES6+ features and building interactive web applications.</p>
+                    <h4>Key Concepts Learned:</h4>
+                    <ul>
+                        <li>Modern JavaScript (ES6+)</li>
+                        <li>DOM manipulation</li>
+                        <li>Asynchronous programming</li>
+                        <li>Fetch API and AJAX</li>
+                        <li>Local Storage</li>
+                        <li>Modules and package management</li>
+                    </ul>
+                    <h4>Projects Completed:</h4>
+                    <div class="course-projects">
+                        <a href="./projects/CSE 121E/Weather/index.html" class="course-project-link">Weather Dashboard</a>
+                        <a href="./projects/CSE 121E/TaskManager/index.html" class="course-project-link">Task Manager</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card animate-on-scroll">
+                <div class="course-header">
+                    <h2>CSE 212</h2>
+                    <h3>Programming with Data Structures</h3>
+                </div>
+                <div class="course-content">
+                    <img src="images/courses/cse212.png" alt="CSE 212 Course Banner" class="course-image">
+                    <p>A study of fundamental data structures and algorithms, with implementation in Python. This course enhanced my problem-solving abilities and algorithm design skills.</p>
+                    <h4>Key Concepts Learned:</h4>
+                    <ul>
+                        <li>Arrays and linked lists</li>
+                        <li>Stacks and queues</li>
+                        <li>Trees and graphs</li>
+                        <li>Hash tables</li>
+                        <li>Sorting and searching algorithms</li>
+                        <li>Big O notation and algorithm analysis</li>
+                    </ul>
+                    <h4>Projects Completed:</h4>
+                    <div class="course-projects">
+                        <a href="./projects/CSE 212/SortingVisualizer/index.html" class="course-project-link">Sorting Algorithm Visualizer</a>
+                        <a href="./projects/CSE 212/PathFinder/index.html" class="course-project-link">Pathfinding Algorithm Simulator</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card animate-on-scroll">
+                <div class="course-header">
+                    <h2>CSE 111</h2>
+                    <h3>Programming with Functions</h3>
+                </div>
+                <div class="course-content">
+                    <img src="images/courses/cse111.jpg" alt="CSE 111 Course Banner" class="course-image">
+                    <p>An introduction to functional programming concepts using Python, focusing on writing modular, reusable, and testable code.</p>
+                    <h4>Key Concepts Learned:</h4>
+                    <ul>
+                        <li>Function design and implementation</li>
+                        <li>Higher-order functions</li>
+                        <li>Lambda expressions</li>
+                        <li>Functional programming paradigms</li>
+                        <li>Testing and debugging techniques</li>
+                    </ul>
+                    <h4>Projects Completed:</h4>
+                    <div class="course-projects">
+                        <a href="./projects/CSE 111/TextAnalyzer/index.html" class="course-project-link">Text Analysis Tool</a>
+                        <a href="./projects/CSE 111/ImageProcessor/index.html" class="course-project-link">Image Processing Application</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card animate-on-scroll">
+                <div class="course-header">
+                    <h2>CSE 110</h2>
+                    <h3>Programming Building Blocks</h3>
+                </div>
+                <div class="course-content">
+                    <img src="images/courses/cse110.jpg" alt="CSE 382 Course Banner" class="course-image">
+                    <p>An advanced exploration of functional programming patterns and practices, with applications in real-world problem-solving.</p>
+                    <h4>Key Concepts Learned:</h4>
+                    <ul>
+                        <li>Pure functions and immutability</li>
+                        <li>Recursion and tail recursion</li>
+                        <li>Monads and functors</li>
+                        <li>Pattern matching</li>
+                        <li>Functional data structures</li>
+                    </ul>
+                    <h4>Projects Completed:</h4>
+                    <div class="course-projects">
+                        <a href="./projects/CSE 382/FunctionalGame/index.html" class="course-project-link">Functional Programming Game</a>
+                        <a href="./projects/CSE 382/DataPipeline/index.html" class="course-project-link">Data Processing Pipeline</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-journey animate-on-scroll">
+            <h2>My Learning Journey</h2>
+            <div class="journey-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>2023 - First Year</h3>
+                        <img src="images/timeline/year1.png" alt="First Year Learning" class="timeline-image">
+                        <p>Started my journey with web fundamentals and basic programming concepts. Focused on HTML, CSS, and introductory JavaScript.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>2024 - Second Year</h3>
+                        <img src="images/timeline/year2.png" alt="Second Year Learning" class="timeline-image">
+                        <p>Deepened my understanding of programming paradigms through object-oriented and functional programming courses. Began building more complex applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>2025 - Final Year</h3>
+                        <img src="images/timeline/year3.png" alt="Final Year Learning" class="timeline-image">
+                        <p>Applied all my learning to create comprehensive web applications. Focused on modern JavaScript frameworks, responsive design, and accessibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section animate-on-scroll">
+            <h2>Want to see my coursework in action?</h2>
+            <p>Check out my projects to see how I've applied these concepts in real-world applications.</p>
+            <a href="projects.html" class="btn">View Projects</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li>
+                    <a href="index.html">
+                        <img class="icon" src="images/footer/home.png" alt="Home">
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <img class="icon" src="images/footer/about.png" alt="About">
+                    </a>
+                </li>
+                <li>
+                        <img class="icon" src="images/footer/project.png" alt="Projects">
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <img class="icon" src="images/footer/courses.png" alt="Courses">
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <img class="icon" src="images/footer/contact.png" alt="Contact">
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="social-links">
+                <li>
+                    <a href="#" aria-label="GitHub Profile">
+                        <img class="icon" src="images/social/github.png" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="LinkedIn Profile">
+                        <img class="icon" src="images/social/linkedin.png" alt="Linked In">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter Profile">
+                        <img class="icon" src="images/social/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="copyright">© 2025 Ashley Hillstead. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

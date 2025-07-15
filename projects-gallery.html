@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery | Ashley Hillstead</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="project-gallery">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ui/logo.png" alt="Ashley Hillstead's Portfolio">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-toggle" aria-expanded="false">
+                        <a href="projects.html" aria-current="page">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="WDD 130">WDD 130</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 210">CSE 210</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 121E">CSE 121E</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 212">CSE 212</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 111">CSE 111</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 382">CSE 382</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="gallery-header animate-on-scroll">
+            <h1>Project Gallery</h1>
+            <p>Explore my coursework projects from BYU-Idaho</p>
+        </section>
+
+        <section class="gallery-filters animate-on-scroll">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <h2>Filter Projects</h2>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="WDD 130">WDD 130</button>
+                        <button class="filter-btn" data-filter="CSE 210">CSE 210</button>
+                        <button class="filter-btn" data-filter="CSE 121E">CSE 121E</button>
+                        <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+                        <button class="filter-btn" data-filter="Python">Python</button>
+                    </div>
+                </div>
+                
+                <div class="view-mode">
+                    <button id="grid-view" class="view-btn active" aria-label="Grid View">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button id="list-view" class="view-btn" aria-label="List View">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-gallery">
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Project items will be loaded dynamically via JavaScript -->
+                <div class="project-card animate-on-scroll" data-category="WDD 130">
+                    <div class="project-image">
+                        <img src="images/projects/workout/thumbnail.jpg" alt="Workout Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Workout Tracker</h3>
+                        <p class="project-course">WDD 130</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="project-details.html?id=workout-tracker" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="WDD 130">
+                    <div class="project-image">
+                        <img src="images/projects/recipes/thumbnail.jpg" alt="Recipe Finder">
+                    </div>
+                    <div class="project-info">
+                        <h3>Recipe Finder</h3>
+                        <p class="project-course">WDD 130</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="project-details.html?id=recipe-app" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="WDD 130">
+                    <div class="project-image">
+                        <img src="images/projects/blog/thumbnail.jpg" alt="Blog Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Blog Platform</h3>
+                        <p class="project-course">WDD 130</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="project-details.html?id=blog-platform" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="WDD 130">
+                    <div class="project-image">
+                        <img src="images/projects/coolpics/thumbnail.jpg" alt="Cool Pics Gallery">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cool Pics Photo Gallery</h3>
+                        <p class="project-course">WDD 130</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="project-details.html?id=cool-pics-gallery" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="WDD 130">
+                    <div class="project-image">
+                        <img src="images/projects/register/thumbnail.jpg" alt="Registration Form">
+                    </div>
+                    <div class="project-info">
+                        <h3>User Registration System</h3>
+                        <p class="project-course">WDD 130</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="project-details.html?id=registration-form" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" data-category="CSE 210">
+                    <div class="project-image">
+                        <img src="images/projects/python/thumbnail.jpg" alt="Python Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Analysis Tool</h3>
+                        <p class="project-course">CSE 210</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Structures</span>
+                        </div>
+                        <a href="project-details.html?id=data-analysis" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn" disabled>Previous</button>
+                <span class="current-page">1</span> of <span class="total-pages">1</span>
+                <button class="pagination-btn" disabled>Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="courses.html">Courses</a>
+                <a href="contacts.html">Contact</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <p class="copyright">© 2025 Ashley Hillstead. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

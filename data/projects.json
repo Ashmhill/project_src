@@ -1,0 +1,150 @@
+{
+    "projects": [
+    {
+      "id": "workout-tracker",
+      "title": "Workout Tracker",
+      "course": "WDD 130",
+      "date": "2025-05-15",
+      "thumbnail": "./images/projects/workout.png",
+      "shortDescription": "A comprehensive workout tracking application for fitness enthusiasts.",
+      "description": "This workout tracking application allows users to create custom workout plans, track their progress, and visualize their fitness journey. It features a responsive design, user authentication, and data persistence using local storage.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Local Storage"],
+      "featured": true,
+      "liveUrl": "./projects/WDD 130/Workout/index.html",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Implemented responsive design principles for all device sizes",
+        "Created a multi-page application with coherent navigation",
+        "Developed data persistence using local storage",
+        "Implemented form validation for user input"
+      ]
+    },
+    {
+      "id": "recipe-app",
+      "title": "Recipe Finder",
+      "course": "WDD 130",
+      "date": "2025-04-20",
+      "thumbnail": "./images/projects/Recipes.png",
+      "shortDescription": "An application for discovering and saving recipes.",
+      "description": "The Recipe Finder app allows users to search for recipes, view detailed instructions, and save their favorites. The application demonstrates advanced JavaScript concepts including data fetching, filtering, and dynamic content generation.",
+      "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
+      "featured": true,
+      "liveUrl": "./projects/WDD 130/Recipes/index.html",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Implemented search and filtering functionality",
+        "Created modular JavaScript for maintainability",
+        "Designed a clean, intuitive user interface",
+        "Used JSON for data storage and retrieval"
+      ]
+    },
+    {
+      "id": "blog-platform",
+      "title": "Personal Blog Platform",
+      "course": "WDD 130",
+      "date": "2025-03-10",
+      "thumbnail": "./images/projects/blog.png",
+      "shortDescription": "A customizable blog platform with content management features.",
+      "description": "This blog platform allows users to create, edit, and publish articles with a simple and intuitive interface. Features include category tagging, search functionality, and responsive design for all device sizes.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "featured": false,
+      "liveUrl": "./projects/WDD 130/Blog/blog.html",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Created responsive layouts using CSS Grid and Flexbox",
+        "Implemented dynamic content loading",
+        "Designed an accessible navigation system"
+      ]
+    },
+    {
+      "id": "cool-pics-gallery",
+      "title": "Cool Pics Photo Gallery",
+      "course": "WDD 130",
+      "date": "2025-02-25",
+      "thumbnail": "./images/projects/coolpics.png",
+      "shortDescription": "An interactive photo gallery with filtering and lightbox features.",
+      "description": "The Cool Pics Photo Gallery allows users to browse, filter, and view high-resolution images in a responsive and interactive interface. Features include category filtering, lightbox view, and image metadata display.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "featured": false,
+      "liveUrl": "./projects/WDD 130/coolpics/coolpics.html",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Implemented image optimization techniques",
+        "Created interactive elements with JavaScript",
+        "Designed a responsive image grid"
+      ]
+    },
+    {
+      "id": "registration-form",
+      "title": "User Registration System",
+      "course": "WDD 130",
+      "date": "2025-02-05",
+      "thumbnail": "./images/projects/Register.png",
+      "shortDescription": "A comprehensive user registration form with validation.",
+      "description": "This project features a multi-step registration form with client-side validation, progress tracking, and confirmation feedback. It demonstrates form handling, input validation, and user experience optimization.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Form Validation"],
+      "featured": false,
+      "liveUrl": "./projects/WDD 130/Register/index.html",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Implemented comprehensive form validation",
+        "Created intuitive user feedback systems",
+        "Designed a multi-step form process"
+      ]
+    },
+    {
+      "id": "data-sorting",
+      "title": "Data Sorting Visualization",
+      "course": "WDD 130",
+      "date": "2025-01-20",
+      "thumbnail": "./images/projects/Sorting.png",
+      "shortDescription": "A visual demonstration of different sorting algorithms.",
+      "description": "This project visualizes various sorting algorithms in action, allowing users to compare performance and understand how different algorithms work. Features include speed control, step-by-step execution, and algorithm comparison.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Algorithms"],
+      "featured": false,
+      "liveUrl": "./projects/WDD 130/sorting/index.html",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Implemented complex JavaScript algorithms",
+        "Created visual representations of data processes",
+        "Designed interactive controls for algorithm parameters"
+      ]
+    },
+    {
+      "id": "credit-card-validator",
+      "title": "Credit Card Validator",
+      "course": "WDD 130",
+      "date": "2024-12-15",
+      "thumbnail": "./images/projects/credit.png",
+      "shortDescription": "A tool for validating and formatting credit card information.",
+      "description": "This credit card validation tool allows users to verify card numbers, format expiration dates, and validate security codes. It implements the Luhn algorithm for card number validation and provides real-time feedback.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Form Validation"],
+      "featured": false,
+      "liveUrl": "./projects/WDD 130/Credit Cards/index.html",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Implemented the Luhn algorithm for card validation",
+        "Created responsive form layout",
+        "Designed intuitive validation feedback"
+      ]
+    },
+    {
+      "id": "mission-statement",
+      "title": "Mission Statement Page",
+      "course": "WDD 130",
+      "date": "2024-11-30",
+      "thumbnail": "./images/projects/mission.png",
+      "shortDescription": "An animated landing page showcasing a company mission statement.",
+      "description": "This project showcases a company's mission statement with animated elements, parallax scrolling, and interactive components. The design focuses on storytelling and user engagement.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Animation"],
+      "featured": false,
+      "liveUrl": "./images/projects/mission.png",
+      "githubUrl": "#",
+      "learningOutcomes": [
+        "Implemented CSS animations and transitions",
+        "Created parallax scrolling effects",
+        "Designed engaging visual storytelling elements"
+      ]
+    }
+  ]
+}

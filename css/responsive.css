@@ -1,0 +1,27 @@
+/* For mobile - responsive icon sizing */
+@media only screen and (max-width: 767px) {
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    footer .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

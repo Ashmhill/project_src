@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Page</title>
+    <link rel="stylesheet" href="progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="progress.html">Your Progress</a></li>
+                <li><a href="plans.html">Workout Plans</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Monitor Your Progress</h1>
+        <p>Track your fitness journey with detailed reports and analytics.</p>
+        <a href="login.html" class="btn-get-started">Get Started</a>
+    </section>
+
+    <!-- Progress Overview Section -->
+    <section id="overview" class="overview">
+        <h2>Your Progress</h2>
+        <div class="charts">
+            <div class="chart">
+                <h3>Workout Frequency</h3>
+                <canvas id="workoutFrequencyChart"></canvas>
+            </div>
+            <div class="chart">
+                <h3>Performance Over Time</h3>
+                <canvas id="performanceChart"></canvas>
+            </div>
+            <div class="chart">
+                <h3>Goal Achievement</h3>
+                <canvas id="goalAchievementChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Progress Section -->
+    <section class="detailed-progress">
+        <h2>Detailed Reports</h2>
+        <div class="details">
+            <div class="detail">
+                <h3>Workout History</h3>
+            <div class="workout-history">
+                <div class="workout-item">
+                    <h4>July 15, 2024</h4>
+                    <p><strong>Type:</strong> Cardio</p>
+                    <p><strong>Duration:</strong> 30 minutes</p>
+                    <p><strong>Details:</strong> Running at a moderate pace.</p>
+                </div>
+                <div class="workout-item">
+                    <h4>July 14, 2024</h4>
+                    <p><strong>Type:</strong> Strength Training</p>
+                    <p><strong>Duration:</strong> 45 minutes</p>
+                    <p><strong>Details:</strong> Full-body workout including squats, bench press, and deadlifts.</p>
+                </div>
+                <div class="workout-item">
+                    <h4>July 13, 2024</h4>
+                    <p><strong>Type:</strong> Yoga</p>
+                    <p><strong>Duration:</strong> 60 minutes</p>
+                    <p><strong>Details:</strong> Hatha yoga session focusing on flexibility and relaxation.</p>
+                </div>
+            </div>
+            <div class="detail">
+                <h3>Performance Metrics</h3>
+                <div class="performance-metrics">
+                    <div class="metric">
+                        <h4>Strength</h4>
+                        <p><strong>Bench Press:</strong> 100 kg</p>
+                        <p><strong>Squat:</strong> 120 kg</p>
+                        <p><strong>Deadlift:</strong> 140 kg</p>
+                    </div>
+                    <div class="metric">
+                        <h4>Endurance</h4>
+                        <p><strong>Running Time (5 km):</strong> 25 minutes</p>
+                        <p><strong>Swimming Distance:</strong> 1 km</p>
+                    </div>
+                    <div class="metric">
+                        <h4>Flexibility</h4>
+                        <p><strong>Toe Touch:</strong> 10 inches</p>
+                        <p><strong>Split Stretch:</strong> 90 degrees</p>
+                    </div>
+            </div>
+            <div class="detail">
+                <h3>Body Measurements</h3>
+                <div class="body-measurements">
+                    <div class="measurement">
+                        <h4>Weight</h4>
+                        <p><strong>Current Weight:</strong> 70 kg</p>
+                    </div>
+                    <div class="measurement">
+                        <h4>Body Fat</h4>
+                        <p><strong>Body Fat Percentage:</strong> 18%</p>
+                    </div>
+                    <div class="measurement">
+                        <h4>Muscle Mass</h4>
+                        <p><strong>Muscle Mass:</strong> 30 kg</p>
+                    </div>
+                    <div class="measurement">
+                        <h4>BMI</h4>
+                        <p><strong>Body Mass Index:</strong> 23.5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips and Insights Section -->
+    <section class="tips-insights">
+        <h2>Expert Tips and Insights</h2>
+        <div class="gallery">
+            <section class="gallery">
+                <div class="gallery-item">
+                    <img src="Images/tip1.png" alt="Tip 1">
+                    <h3>20 Expert Tips to Get The Most Out of Your Workout</h3>
+                    <p>
+                    Balancing the demands of work, social life, and personal well-being can be overwhelming, but optimizing your workouts can alleviate some of that stress. Incorporate resistance training to build muscle and boost metabolism, stay hydrated to support performance and recovery, and prioritize mobility for better results. Ensure proper recovery through adequate sleep and consider effective supplements like protein and creatine. Utilize interval training for cardiovascular benefits, focus on the mind-body connection to enhance strength, and fuel your body with a balanced diet. Mix up your routine to prevent boredom, pre-fuel for high-intensity workouts, and post-fuel to aid recovery. Music can boost motivation, caffeine can enhance performance, and massages can aid recovery. Timing your workouts strategically and finding support through workout partners can also contribute to your success.
+                    </p>
+                    <a href="https://www.myprotein.com/thezone/training/20-expert-tips-your-workout/" class="read-more">Read More</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tip2.png" alt="Tip 2">
+                    <h3>Top 10 Supplements For Energy To Fight Tiredness</h3>
+                    <p>Fatigue can significantly disrupt daily life, particularly during the dark winter months, and isn't solely due to inadequate sleep. Various factors, such as diet, stress, and exercise, contribute to tiredness. Key supplements to combat fatigue include Vitamin B12, which supports red blood cell production and energy release from macronutrients; Iron, vital for oxygen transport and preventing anemia; Vitamin C, which enhances iron absorption and supports energy metabolism; and Magnesium, crucial for cell function and energy levels. Additional supplements like caffeine, Ginseng, and Coenzyme Q10 can also help boost energy. While supplements can be beneficial, they should complement a balanced diet and healthy lifestyle rather than replace them. For persistent fatigue, consulting a healthcare professional for a tailored approach is advisable.</p>
+                    <a href="https://www.myprotein.com/thezone/nutrition/always-tired-best-supplements-beat-extreme-fatigue/" class="read-more">Read More</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tip3.png" alt="Tip 3">
+                    <h3>Push Pull Legs Routine | The Best Mass-Building Workout Split</h3>
+                    <p>The "Push, Pull, Legs" workout split divides muscle groups into three categories: Push (chest, shoulders, triceps), Pull (back, traps, biceps), and Legs (glutes, hamstrings, quads, calves). This approach allows each muscle group to recover while training others, optimizing growth and avoiding overtraining. Beginners typically follow a three-day split with basic compound exercises to build strength and form, while advanced lifters use a more frequent, varied split with additional isolation exercises and progressive overload for continuous improvement. Both routines emphasize compound movements for efficiency and effectiveness in building mass and strength. Proper nutrition and tracking progress complement the training for best results.</p>
+                    <a href="https://www.myprotein.com/thezone/training/push-pull-legs-routine-best-mass-building-workout-split/" class="read-more">Read More</a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+
+    <script src="progress.js"></script>
+</body>
+</html>

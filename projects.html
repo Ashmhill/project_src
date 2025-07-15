@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ashley Hillstead</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="projects">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ui/logo.png" alt="Ashley Hillstead's Portfolio">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-toggle" aria-expanded="false">
+                        <a href="projects.html" aria-current="page">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="WDD 130">WDD 130</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 210">CSE 210</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 121E">CSE 121E</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 212">CSE 212</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 111">CSE 111</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 382">CSE 382</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="projects-header animate-on-scroll">
+            <h1>My Projects</h1>
+            <p>A showcase of my work from BYU-Idaho coursework and beyond</p>
+        </section>
+
+        <section class="projects-filters animate-on-scroll">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="course-filter">Filter by Course:</label>
+                    <select id="course-filter" class="filter-select">
+                        <option value="all">All Courses</option>
+                        <option value="WDD 130">WDD 130</option>
+                        <option value="CSE 210">CSE 210</option>
+                        <option value="CSE 121E">CSE 121E</option>
+                        <option value="CSE 212">CSE 212</option>
+                        <option value="CSE 111">CSE 111</option>
+                        <option value="CSE 382">CSE 382</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="tech-filter">Filter by Technology:</label>
+                    <select id="tech-filter" class="filter-select">
+                        <option value="all">All Technologies</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="JSON">JSON</option>
+                        <option value="Local Storage">Local Storage</option>
+                    </select>
+                </div>
+                
+                <div class="view-toggle">
+                    <button id="grid-view" class="view-btn active" aria-label="Grid View">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button id="list-view" class="view-btn" aria-label="List View">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-gallery">
+            <div id="projects-container" class="projects-grid">
+                <!-- Projects will be loaded dynamically via JavaScript -->
+                <div class="loading-indicator">
+                    <div class="spinner"></div>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button id="load-more" class="btn">Load More</button>
+            </div>
+        </section>
+
+        <section class="cta-section animate-on-scroll">
+            <h2>Looking for Something Specific?</h2>
+            <p>Have a question about one of my projects or want to collaborate?</p>
+            <a href="contacts.html" class="btn">Get in Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li>
+                    <a href="index.html">
+                        <img class="icon" src="images/footer/home.png" alt="Home">
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <img class="icon" src="images/footer/about.png" alt="About">
+                    </a>
+                </li>
+                <li>
+                        <img class="icon" src="images/footer/project.png" alt="Projects">
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <img class="icon" src="images/footer/courses.png" alt="Courses">
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <img class="icon" src="images/footer/contact.png" alt="Contact">
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="social-links">
+                <li>
+                    <a href="#" aria-label="GitHub Profile">
+                        <img class="icon" src="images/social/github.png" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="LinkedIn Profile">
+                        <img class="icon" src="images/social/linkedin.png" alt="Linked In">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter Profile">
+                        <img class="icon" src="images/social/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="copyright">© 2025 Ashley Hillstead. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

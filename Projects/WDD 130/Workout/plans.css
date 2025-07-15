@@ -1,0 +1,177 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for paragraphs */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E0E0E0; /* Accent 2 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: #3E64FF; /* Primary */
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Font for header */
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* Container for central alignment */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #3E64FF; /* Primary */
+    margin-bottom: 20px;
+}
+
+/* Filter section styles */
+#filters {
+    margin-bottom: 20px;
+}
+
+/* Filter group styles */
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3E64FF; /* Primary */
+}
+
+.filter-group input[type="text"],
+.filter-group input[type="number"],
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.filter-group button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.filter-group button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Workout item styles */
+#workoutList {
+    margin-top: 20px;
+}
+
+.workout-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+}
+
+.workout-item:nth-child(even) {
+    background-color: #F9F9F9; /* Light gray for alternating rows */
+}
+
+/* Hover effect for workout items */
+.workout-item:hover {
+    border-color: #4CAF50; /* Secondary */
+}
+
+/* Filter section button */
+.filter-group button:hover img {
+    filter: brightness(0.8); /* Subtle hover effect */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .filter-group input[type="text"],
+    .filter-group input[type="number"],
+    .filter-group select {
+        font-size: 14px;
+    }
+
+    .workout-item {
+        font-size: 14px;
+    }
+}
+
+footer {
+    background: #3E64FF; /* Primary */
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Font for footer */
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media {
+    margin-top: 1em;
+}
+
+footer .social-media a {
+    margin: 0 5px;
+}
+
+footer .social-media img {
+    height: 30px;
+}

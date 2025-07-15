@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Ashley Hillstead</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="project-details">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ui/logo.png" alt="Ashley Hillstead's Portfolio">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown-toggle" aria-expanded="false">
+                        <a href="projects.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="WDD 130">WDD 130</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 210">CSE 210</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 121E">CSE 121E</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 212">CSE 212</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 111">CSE 111</a></li>
+                            <li><a href="#" class="project-filter" data-filter-type="course" data-filter-value="CSE 382">CSE 382</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-details-header">
+            <div class="container">
+                <div id="project-title-container">
+                    <h1>Loading Project...</h1>
+                    <p>Please wait while the project details are loaded.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details-content">
+            <div class="container">
+                <div id="project-container">
+                    <div class="loading-indicator">
+                        <div class="spinner"></div>
+                        <p>Loading project details...</p>
+                    </div>
+                </div>
+                
+                <div class="project-navigation">
+                    <a href="#" id="prev-project" class="btn btn-outline">Previous Project</a>
+                    <a href="#" id="next-project" class="btn btn-outline">Next Project</a>
+                </div>
+                
+                <script>
+                    // Add this to your HTML file
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const prevButton = document.getElementById('prev-project');
+                        const nextButton = document.getElementById('next-project');
+                        
+                        if (prevButton) {
+                            prevButton.addEventListener('click', function(e) {
+                                if (this.getAttribute('href') === '#') {
+                                    e.preventDefault();
+                                    import('./js/modules/projectsData.js')
+                                        .then(module => {
+                                            module.navigateProjects('prev');
+                                        });
+                                }
+                            });
+                        }
+                        
+                        if (nextButton) {
+                            nextButton.addEventListener('click', function(e) {
+                                if (this.getAttribute('href') === '#') {
+                                    e.preventDefault();
+                                    import('./js/modules/projectsData.js')
+                                        .then(module => {
+                                            module.navigateProjects('next');
+                                        });
+                                }
+                            });
+                        }
+                    });
+                </script>
+
+                <div class="related-projects">
+                    <h2>Related Projects</h2>
+                    <div id="related-projects-container" class="projects-grid">
+                        <div class="loading-indicator">
+                            <div class="spinner"></div>
+                            <p>Loading related projects...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li>
+                    <a href="index.html">
+                        <img class="icon" src="images/footer/home.png" alt="Home">
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <img class="icon" src="images/footer/about.png" alt="About">
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <img class="icon" src="images/footer/project.png" alt="Projects">
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <img class="icon" src="images/footer/courses.png" alt="Courses">
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <img class="icon" src="images/footer/contact.png" alt="Contact">
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="social-links">
+                <li>
+                    <a href="#" aria-label="GitHub Profile">
+                        <img class="icon" src="images/social/github.png" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="LinkedIn Profile">
+                        <img class="icon" src="images/social/linkedin.png" alt="Linked In">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter Profile">
+                        <img class="icon" src="images/social/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="copyright">© 2025 Ashley Hillstead. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
